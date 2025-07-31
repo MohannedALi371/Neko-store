@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -144,8 +146,8 @@
     Every cat has a home waiting for it 💜
   </div>
 <div class="nav-links">
-  <a href="#home"> تواصل معنا  <img src="images\kitty4.png" height="50px" width="50px"></a> 
-  <a href="#shop"> مستلزمات القطط  <img src="images\bowl.png" height="50px" width="50px"></a>
+  <a href="#Test"> تواصل معنا  <img src="images\elearning.png" height="60px" width="60px"></a> 
+  <a href="supplies.html"> مستلزمات القطط  <img src="images\bowl.png" height="50px" width="50px"></a>
   <a href="cats.html">قطط لتبني  <img src="images\relationship.png" height="50px" width="50px"></a>
 </div>
 <div class="gallery">
@@ -172,6 +174,9 @@
 <img src="images\Graphic Tshirt Design.jpeg" alt="cutecat">
 </div>
 <div class="custombox">
+  <div class="cat-icon-container4">
+    <img src="images/smile.png"width="150px" height="150px" >
+  </div>
 <button class="button">
   <span>N</span>
   <span>E</span>
@@ -186,6 +191,9 @@
 </button>
  <div class="cat-quote">
 <p> ليس مجرد متجر، بل هو رسالة. نسعى من خلاله إلى دعم رفاهية القطط وتسهيل التبني الناجح، عبر توفير بيئة آمنة ومليئة بالحب للقطط الباحثة عن منزل دائم. نؤمن أن علاقة الإنسان بالقطط قادرة على تغيير الحياة، ونعمل بجهد لصنع هذا التغيير لكل من القطط والمتبنين.</p>🐾💜
+      <div class="cat-icon-container6">
+        <img src="images/communications.png" height="150px" width="150px">
+      </div>
 <p>Neko-Store is dedicated to promoting cat welfare and facilitating successful adoptions. Our team is committed to providing a safe and nurturing environment for cats in need of forever homes. We believe in the power of human-feline companionship and strive to make a positive impact on the lives of both cats and adopters.</p>
  </div>
 </div>
@@ -196,7 +204,9 @@
   </video>
     <img src="images\1000021166.png" class="styled-img" alt="cutecat"> 
 </div>
-
+<div class="cat-icon-container3">
+  <img src="images/education.png" width="150px" height="150px" >
+</div>
  <div class="card13">
       <p class="card-title">🐾 كيف يعمل موقعنا؟</p>
       <p class="small-desc">
@@ -205,7 +215,7 @@
 📸 الصور – 🎂 العمر –  🐾النوع – 📝 الوصف الكامل.
 نحن نحرص على أن تصل القطط إلى الأشخاص المناسبين،
 ونضمن عملية التبني بشكل آمن من خلال متابعة دقيقة بعد التسليم،
-🔍 حيث نقوم بمراقبة حالة القط الصحية بشكل يومي لضمان راحته وسلامته.      </p>
+🔍 حيث نقوم بمراقبة حالة القط الصحية بشكل يومي لضمان راحته وسلامته.  </p>
       <p>🐾 
 On our platform, you can easily enter your name, phone number, and email address to register a cat for adoption.
 You’ll be able to upload photos and provide full details about the cat, including:
@@ -217,49 +227,60 @@ and we guarantee a safe adoption process with post-adoption follow-ups.
    <div class="go-corner">
         <div class="go-arrow">→</div>
    </div>
-           <img src="https://img.icons8.com/?size=100&id=kRARdpdXNIla&format=png&color=000000">
+           <img src="images/teacher.png" height="150px" width="150px" >
 </div>
-<!-- From Uiverse.io by DavidTM96 --> 
+<!-- From Uiverse.io by DavidTM96 -->
 <div class="form-card1">
   <div class="form-card2">
-    <form class="form">
+    <form class="form" action="https://formspree.io/f/mldlnzky" method="POST">
       <p class="form-heading">Neko-Store</p>
 
       <div class="form-field">
-        <input required="" placeholder="Name" class="input-field" type="text" />
+        <input
+          required
+          placeholder="Name"
+          class="input-field"
+          type="text"
+          name="name"
+        />
       </div>
 
       <div class="form-field">
         <input
-          required=""
+          required
           placeholder="Email"
           class="input-field"
           type="email"
+          name="email"
         />
       </div>
 
       <div class="form-field">
-        
         <input
-          required=""
-          placeholder="phone-numper"
+          required
+          placeholder="Phone Number"
           class="input-field"
           type="text"
+          name="phone"
         />
-
       </div>
 
       <div class="form-field">
         <textarea
-          required=""
+          required
           placeholder="Message"
           cols="30"
           rows="3"
           class="input-field"
+          name="message"
         ></textarea>
       </div>
 
-      <button class="sendMessage-btn">Send Message</button>
+      <!-- خيارات إضافية -->
+ <input type="hidden" name="_next" value="redirect.html">
+  <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit" class="sendMessage-btn">Send Message</button>
     </form>
   </div>
 </div>
@@ -282,8 +303,14 @@ and we guarantee a safe adoption process with post-adoption follow-ups.
       <div class="cat-icon-container2">
 <img src="images\kitty2.png" class="cat-icon2" alt="cat icon">
 </div>
+<div class="cat-icon-container5">
+  <img src="images/school.png" width="150px" height="150px">
+</div>
   </div>
 </div>
+
+
+
 
 </body>
 </html>
