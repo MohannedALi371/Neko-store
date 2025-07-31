@@ -1,0 +1,174 @@
+.intro-section {
+  text-align: center;
+  margin-top: -120px;
+  padding: 2rem 1rem;
+  color: #ffea05;
+}
+
+.intro-section h2 {
+  font-size: 32px;
+  color: #0c6df5;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  font-size: 30px;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+}
+
+.logo45-text {
+  display: inline-block;
+  padding: 10px;
+  position: relative; /* لتحديد مكانه دون فصل عن التدفق العام */
+  transition: transform 0.3s ease;
+}
+
+.logo45-text:hover {
+  transform: scale(1.1); /* تكبير بسيط عند مرور الماوس */
+}
+.logo45 {
+  position: sticky;
+  width: 120px; /* نفس مكان الصورة */
+  height: 120px;
+  margin-left: 2px; /* بدل left داخل img */
+}
+
+.logo45 img {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+    
+}
+
+.logo45:hover img {
+  transform: scale(1.1);
+}
+
+.calling {
+    position: absolute;
+right: 0.01px;
+  padding: 2rem 1rem;
+  margin-top: -3rem;
+}
+
+.calling h1 {
+  font-size: 24px;
+  color: #d6e414;
+
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+}
+
+
+
+/* From Uiverse.io by samuelfcosta18 */ 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;       /* إذا لم يكن هناك مساحة، تنتقل الكروت للسطر الثاني */
+  gap: 20px;              /* مسافة بين الكروت */
+  justify-content: center; /* توسيط الكروت */
+  padding: 20px;
+}
+.card {
+  width: 350px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #474dc3;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card svg {
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 3px;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: #474dc3;
+  color: #ffffff;
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #474dc3;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  padding-left: 5px;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+.adopt-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.adopt-button:hover {
+  background-color: #ffdd33;
+}
+
+/* Commands to change the shadows in dark mode
+@media (prefers-color-scheme: dark) {
+  .card:hover {
+  box-shadow: 0 8px 16px #000000;
+  }
+}*/
