@@ -1,6 +1,6 @@
    body {
       background-color: #0d3965;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'CatPaw', cursive, sans-serif;
       padding-top: 70px;
     }
     body::before {
@@ -1033,4 +1033,5 @@ strong {
   color: #8909bb;
   font-family:'CatPaw';
 }
+
 
