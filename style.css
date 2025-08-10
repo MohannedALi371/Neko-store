@@ -155,6 +155,18 @@
   color: #ffffff;
   line-height: 1.4;
 }
+.img-plus{
+    width: 50px; /* الحجم الصغير */
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.img-plus:hover{
+    transform: scale(3); /* تكبير للصورة */
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 .adopt-button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -1033,5 +1045,6 @@ strong {
   color: #8909bb;
   font-family:'CatPaw';
 }
+
 
 
