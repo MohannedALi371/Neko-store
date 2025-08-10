@@ -1,5 +1,3 @@
-alert("javascript يعمل بنجاح!");
-console.log("تم تحميل ملف javascript بنحاح.");
 
   function adoptCat(button) {
     alert(" او علي بريدنا الإلكتروني Amohanned371@gmail.com / شكراً! تم إرسال طلب التبني بنجاح 🐾 سيظهر لك نموذج نأمل منك تعبئته🤗💜. للاستفسار و26910314 ");
@@ -8,3 +6,27 @@ console.log("تم تحميل ملف javascript بنحاح.");
     window.open(formURL, '_blank');
   }
 
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.querySelector('form[action="https://formspree.io/f/mldlnzky"]');
+
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          // هنا ضع رابط صفحة الشكر
+          window.location.href = "https://form.jotform.com/252195841744059";
+        } else {
+          alert('حدث خطأ، حاول مرة أخرى.');
+        }
+      }).catch(error => {
+        alert('تعذر الإرسال، تحقق من الاتصال.');
+      });
+    });
+  }
+});
